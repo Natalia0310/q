@@ -1,30 +1,43 @@
 import styled from 'styled-components';
 
 export const FormStyled = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-
+  
+  font-size: 20px;
+  font-weight: 600;
+  
+  color: var(--dark-clr-2);
   & input {
-    margin-left: 10px;
+    margin-left: var(--default-margin);
+     padding: 5px 10px;
+    
+    font-size: 16px;
+    font-weight: 600;
+    
+    border: 2px dashed var(--light-clr-2);
+    background-color: inherit;
   }
 
   & .name {
-    margin-left: 25px;
+    
+    margin-bottom: var(--default-margin);
   }
 
   & button {
-    padding: 5px 10px;
-    background-color: #a8dadc;
-    border: 0px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 200ms ease-in-out, background-color 200ms ease-in;
+    margin-top: var(--default-margin);
+    //   padding: 5px 15px;
+    
+    //   border: none;
+    //   outline: none;
+    //   cursor: pointer;
+    //   border: var(--default-border);
+    
+    //   font-size: 16px;
+    //   font-weight: 600;
+    
+    //   color: var(--dark-clr-2);
+    //   background-color: var(--light-clr-2);  
   }
 
-  & button:hover {
-    background-color: #457b9d;
-    transform: scale(1.05);
-  }
+  
 `;
+
